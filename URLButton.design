@@ -1,0 +1,9 @@
+<design:component>
+    <design:attribute name="url" label="URL" description="Enter the URL you would like to use.  Do not enter in Record ID.  Record ID variable will be added to the end of the URL.  If you want to open an external url, add the full address including http://"/>
+    <design:attribute name="Label" label="Label" description="Enter in the label you would like for the button"/>
+    <design:attribute name="open" label="Open" description="Enter how you would like the url to open.  You can enter _blank, _self, _parent, or _top" />
+    <design:attribute name="bVariant" label="Button Variant" description="Determine the how the buttton will look.  Options are base, Neutral, brand, destructive, success." />
+    <design:attribute name="bIcon" label="Button Icon" description="Please use the lightning design system utility icons." />
+    <design:attribute name="bIconPosition" label="Button Icon Positon" description="where the icon will be displayed.  Enter left or right" /> 
+    <design:attribute name="includeRecord" label="Include Record?" description="If checked, the URL will add the Record ID to end"/>
+</design:component>
