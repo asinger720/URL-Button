@@ -1,0 +1,15 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable,force:hasRecordId" access="global">
+    <aura:attribute name="recordId" type="string"/>
+    <aura:attribute name="Label" type="string" default='Click Here to Open URL'/>
+    <aura:attribute name="url" type="string"/>
+    <aura:attribute name="open" type="string" default='_self'/>
+    <aura:attribute name="bVariant" type="string" default="brand" />
+    <aura:attribute name="bIcon" type="string" default="utility:animal_and_nature" />
+    <aura:attribute name="bIconPosition" type="string" default="left" />
+    <aura:attribute name="includeRecord" type="boolean" default="true"/>
+     
+
+        <!--Open URL-->
+        <lightning:button label="{! v.Label }" variant="{! v.bVariant }" iconName="{! v.bIcon }" iconPosition="{! v.bIconPosition }" onclick="{!c.OpenURL}"/>
+
+</aura:component>
